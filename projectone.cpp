@@ -55,7 +55,7 @@ bool search (string line, string word){
     int x = 0; //x and y count position in string.
     int y = 0;
     for (int i = 0; i < line.length(); i++){ 
-        if (word[x] == line[y]){ //add or statments subtracting to make it check for positive and negetive chars.
+        if (word[x] == line[y] || word[x] == line[y] + 32 || word[x] + 32 == line [y]){ //add or statments subtracting to make it check for positive and negetive chars.
             x++;
         }
     y++;
